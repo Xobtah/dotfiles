@@ -14,8 +14,19 @@
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.formatOnSave": true,
     },
-    "rust-analyzer.cargo.target": "x86_64-pc-windows-gnu",
+    // "rust-analyzer.cargo.target": "x86_64-pc-windows-gnu",
     // "rust-analyzer.procMacro.enable": true,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.check.extraArgs": [
+        "--",
+        "-Wclippy::pedantic",
+        "-Aclippy::doc_markdown",
+        "-Aclippy::missing_errors_doc",
+        "-Aclippy::missing_panics_doc",
+        "-Aclippy::cast_precision_loss",
+        "-Aclippy::cast_possible_truncation",
+        "-Aclippy::cast_sign_loss"
+    ],
     "rust-analyzer.cargo.buildScripts.enable": true,
     "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
     "[python]": {
@@ -31,4 +42,12 @@
         "markdown": false,
         "scminput": false
     },
+    "editor.minimap.size": "fill",
+    "editor.minimap.showSlider": "always",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.maxComputationTime": 0,
+    "editor.renderWhitespace": "none",
+    "zig.path": "/home/sylvain/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+    "zig.zls.path": "/home/sylvain/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "zig.initialSetupDone": true,
 }
