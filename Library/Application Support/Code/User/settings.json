@@ -29,6 +29,7 @@
         "-Aclippy::cast_sign_loss"
     ],
     "rust-analyzer.cargo.buildScripts.enable": true,
+    // "rust-analyzer.cargo.features": ["..."],
     "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
@@ -51,4 +52,6 @@
     "zig.path": "/home/sylvain/.config/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
     "zig.zls.path": "/home/sylvain/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "zig.initialSetupDone": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "editor.autoClosingComments": "never",
 }
